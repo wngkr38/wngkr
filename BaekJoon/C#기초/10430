@@ -1,0 +1,19 @@
+using System;
+
+namespace BaekJoon
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int[] in_data = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+
+            Console.WriteLine((in_data[0] + in_data[1]) % in_data[2]);
+            Console.WriteLine(((in_data[0] % in_data[2]) + (in_data[1] % in_data[2])) % in_data[2]);
+            Console.WriteLine((in_data[0] * in_data[1]) % in_data[2]);
+            Console.WriteLine(((in_data[0] % in_data[2]) * (in_data[1] % in_data[2])) % in_data[2]);
+
+        }
+    }
+}
