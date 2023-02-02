@@ -1,6 +1,6 @@
 using System;
 
-namespace 25083
+namespace BaekJoon
 {
     class Program
     {
