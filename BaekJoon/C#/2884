@@ -1,0 +1,30 @@
+using System;
+
+namespace BaekJoon
+{
+    class BaekJoon
+    {
+        static void Main(string[] args)
+        {
+            int[] t = Array.ConvertAll(Console.ReadLine().Split() , int.Parse);
+
+            t[1] -= 45;
+
+            if (t[1]< 0)
+            {
+                t[0] -= 1;
+                t[1] += 60;
+            }
+
+            if (t[0] < 0) 
+            {
+                t[0] += 24;
+            }
+
+            Console.WriteLine(string.Join(" ",t));
+
+        }
+
+
+    }
+}
