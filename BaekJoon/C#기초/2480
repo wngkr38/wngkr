@@ -1,0 +1,31 @@
+using System;
+
+namespace BaekJoon
+{
+    class BaekJoon
+    {
+        static void Main(string[] args)
+        {
+            string[] input = Console.ReadLine().Split();
+
+            Array.Sort(input);
+
+            
+                if (int.Parse(input[0]) == int.Parse(input[1]) && int.Parse(input[1]) ==int.Parse(input[2]))
+                {
+                    Console.WriteLine(10000 + (int.Parse(input[2]) * 1000 ));
+                }
+
+                else if (int.Parse(input[0]) == int.Parse(input[1]) || int.Parse(input[1]) == int.Parse(input[2]))
+                {
+                    Console.WriteLine(1000 + (int.Parse(input[1]) * 100));
+                }
+                else 
+                {
+                Console.WriteLine(int.Parse(input[2]) * 100); 
+                }
+            }
+           
+           
+        }
+    }
