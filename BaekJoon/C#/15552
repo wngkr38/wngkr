@@ -1,0 +1,26 @@
+using System;
+using System.Text;
+
+namespace Backjoon
+{
+    class rin
+    {
+        static void Main(string[] args)
+        {
+
+            string input = Console.ReadLine();
+
+            StringBuilder num = new StringBuilder();
+
+            for (int i = 1; i <= Int32.Parse(input); i++)
+            {
+
+                string[] inp = Console.ReadLine().Split();
+
+                num.Append(int.Parse(inp[0]) + int.Parse(inp[1]) + "\n");
+
+            }
+                Console.WriteLine(num.ToString());
+        }
+    }
+}
