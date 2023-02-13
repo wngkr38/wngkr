@@ -1,0 +1,20 @@
+using System;
+
+namespace BaekJoon
+{
+    class BaekJoon
+    {
+        static void Main(string[] args)
+        {
+
+            int cnt = int.Parse(Console.ReadLine());
+            int sum = 0;
+            for (int i = cnt; i > 0; --i)
+            {
+                sum += i;
+            }
+                Console.WriteLine(sum);
+        }
+    }
+}
+    
